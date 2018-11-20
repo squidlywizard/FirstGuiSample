@@ -1,13 +1,17 @@
 package gui.view;
 
 import javax.swing.JFrame;
+import gui.controller.GuiController;
 
 public class FirstFrame extends JFrame
 {
-	public FirstFrame()
+	private GuiController appController;
+	
+	public FirstFrame(GuiController appController)
 	{
-		super();
-		//if you use a class with extends you need the super method 
+		super();//if you use a class with extends you need the super method IT IS FIRST
+		this.appController = appController;
+		
 		setupFrame();
 	}
 

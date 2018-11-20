@@ -9,12 +9,12 @@ public class GuiController
 	public GuiController() 
 	{
 		myDuck = new Duck();//put these 2 in this order
-		appFrame = new FirstFrame();
+		appFrame = new FirstFrame(null);
 	}
 
 	public void start()
 	{
-		// TODO Auto-generated method stub
+		
 		
 	}
 
