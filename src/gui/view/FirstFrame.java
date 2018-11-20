@@ -6,11 +6,13 @@ import gui.controller.GuiController;
 public class FirstFrame extends JFrame
 {
 	private GuiController appController;
+	private FirstPanel appPanel;
 	
 	public FirstFrame(GuiController appController)
 	{
 		super();//if you use a class with extends you need the super method IT IS FIRST
 		this.appController = appController;
+		this.appPanel = new FirstPanel(appController);//Remember that panels are in frames
 		
 		setupFrame();
 	}
