@@ -9,7 +9,7 @@ public class GuiController
 	public GuiController() 
 	{
 		myDuck = new Duck();//put these 2 in this order
-		appFrame = new FirstFrame(null);
+		appFrame = new FirstFrame(this);//use this
 	}
 
 	public void start()

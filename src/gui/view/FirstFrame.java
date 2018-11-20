@@ -1,6 +1,7 @@
 package gui.view;
 
 import javax.swing.JFrame;
+
 import gui.controller.GuiController;
 
 public class FirstFrame extends JFrame
@@ -19,6 +20,7 @@ public class FirstFrame extends JFrame
 
 	private void setupFrame()
 	{
+		this.setContentPane(appPanel);//this refrences the panel so we can get buttons
 		this.setSize(800,800);
 		this.setTitle("Fug");
 		this.setResizable(true);
